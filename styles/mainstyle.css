@@ -1,0 +1,220 @@
+/* Algemene basis */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#content {
+  display: flex;
+  min-height: 100vh;
+}
+
+header {
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   header{
+     height: 80px;
+   }
+}
+
+h1 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 0.75em;
+  padding-bottom: 10px;
+}
+
+
+/* Navigatie + gele lijn */
+nav {
+  background-color: black;
+  color: white;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0.5em 1em;
+}
+
+nav li {
+  margin: 0.5em 1em 0.5em 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.geel-streepje {
+  height: 5px;
+  background-color: yellow;
+}
+
+
+
+.linkervlak {
+  background-color: #E6A8A1;
+  color: black;
+  padding: 20px;
+  width: 30%;
+}
+
+.rechtervlak {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 70%;
+}
+
+.rechtervlak h2 {
+  color: red;
+}
+
+.linkervlak p {
+  margin-bottom: 1em;
+}
+.rechtervlak p {
+  margin-bottom: 2em;
+}
+
+/* Media query voor mobiel */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vlak3, .vlak4 {
+    width: 100%;
+  }
+}
+
+[class*="col-"] {
+    width: 100%;
+    height: auto;
+}
+    @media only screen and (min-width: 768px) {
+        [class*="col-"] {
+            float: left;
+            padding: 0px;
+        }
+
+.col-1 {width: 9.09%;}
+.col-2 {width: 18.18%;}
+.col-3 {width: 27.27%;}
+.col-4 {width: 36.36%;}
+.col-5 {width: 45.45%;}
+.col-6 {width: 54.55%;}
+.col-7 {width: 63.64%;}
+.col-8 {width: 72.73%;}
+.col-9 {width: 81.82%;}
+.col-10 {width: 90.91%;}
+.col-11 {width: 100%;} 
+}
+
+
+footer {
+  background-color: lightblue;
+  color: black;
+  height: 50px;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.linkervlak-afbeelding {
+    max-width: 100%;
+    max-height: 80%;
+    padding: 20px;
+}
+
+.rechtervlak-afbeelding {
+  max-width: 33%;
+  padding: 20px;
+  max-height: 50%;
+
+}
+
+.linkervlak-kaart {
+    max-width: 100%;
+    max-height: 80%;
+    padding: 20px;
+}
+
+.tarieventabel {
+    border=collapse: seperate;
+    border-spacing: 0 1em;
+    width: 100%';
+    padding: 1em 0;
+    line-height: 1.6;
+    vertical-align: top;
+
+}
+
+.tarieventabel td {
+    border-bottom: 1px solid #ccc;
+}
+
+.tarieventabel tr:last-child td {
+    border-bottom: none;
+}
+
+dt {
+    border-bottom: 1px solid #ccc;
+    border-spacing: 0 1em;
+    padding: 1em 0;
+ 
+}  
+
+dd {
+  padding: 1.5em 0;  
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: lightblue;
+    color: black;
+}
+
+    

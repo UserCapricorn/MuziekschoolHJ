@@ -1,0 +1,216 @@
+/* Algemene basis */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#content {
+  display: flex;
+  min-height: 100vh;
+}
+
+header {
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   header{
+     height: 80px;
+   }
+}
+
+h1 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 0.75em;
+  padding-bottom: 10px;
+}
+
+
+/* Navigatie + gele lijn */
+nav {
+  background-color: black;
+  color: white;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0.5em 1em;
+}
+
+nav li {
+  margin: 0.5em 1em 0.5em 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   .nav ul {
+      display: block;
+      text-align: center;
+   }
+   .nav li {
+      margin-bottom: 10px 0;
+   }
+   .nav a {
+      display: inline-block;
+   }
+}
+
+.geel-streepje {
+  height: 5px;
+  background-color: yellow;
+}
+
+
+
+.linkervlak {
+  background-color: #E6A8A1;
+  color: black;
+  padding: 20px;
+  width: 30%;
+}
+
+
+.rechtervlak {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 70%;
+}
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   #content {
+      flex-direction: column;
+   }
+   .linkervlak, rechtervlak {
+      width: 100%;
+   }
+}
+
+.rechtervlak h2 {
+  color: red;
+}
+
+.linkervlak p {
+  margin-bottom: 1em;
+}
+.rechtervlak p {
+  margin-bottom: 2em;
+}
+
+
+
+footer {
+  background-color: lightblue;
+  color: black;
+  height: 50px;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  width: 100%;
+}
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   footer {
+      height: 60px;
+   }
+}
+
+.linkervlak-afbeelding {
+    max-width: 100%;
+    max-height: 80%;
+    padding: 20px;
+}
+
+.rechtervlak-afbeelding {
+  max-width: 33%;
+  padding: 20px;
+  max-height: 50%;
+}
+
+
+.linkervlak-kaart {
+    max-width: 100%;
+    max-height: 80%;
+    padding: 20px;
+}
+
+.tarieventabel {
+    border=collapse: seperate;
+    border-spacing: 0 1em;
+    width: 100%';
+    padding: 1em 0;
+    line-height: 1.6;
+    vertical-align: top;
+
+}
+
+.tarieventabel td {
+    border-bottom: 1px solid #ccc;
+}
+
+.tarieventabel tr:last-child td {
+    border-bottom: none;
+}
+
+dt {
+    border-bottom: 1px solid #ccc;
+    border-spacing: 0 1em;
+    padding: 1em 0;
+ 
+}  
+
+dd {
+  padding: 1.5em 0;  
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: lightblue;
+    color: black;
+}
+
+    

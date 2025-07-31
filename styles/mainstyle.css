@@ -1,4 +1,3 @@
-/* Algemene basis */
 * {
   margin: 0;
   padding: 0;
@@ -145,7 +144,7 @@ footer {
 /* Aangepast voor mobiel */
 @media (max-width: 768px) {
    footer {
-      height: 60px;
+      height: 65px;
    }
 }
 
@@ -160,7 +159,12 @@ footer {
   padding: 20px;
   max-height: 50%;
 }
-
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+ .rechtervlak-afbeelding {
+      max-width: 50%;
+   }
+}
 
 .linkervlak-kaart {
     max-width: 100%;

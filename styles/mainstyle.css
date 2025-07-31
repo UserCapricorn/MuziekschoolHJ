@@ -28,7 +28,7 @@ header {
 /* Aangepast voor mobiel */
 @media (max-width: 768px) {
    header{
-     height: 80px;
+     height: 90px;
    }
 }
 
@@ -77,12 +77,15 @@ nav a {
 
 /* Aangepast voor mobiel */
 @media (max-width: 768px) {
-   .nav ul {
+   nav ul {
       display: block;
       text-align: center;
    }
-   .nav li {
-      margin-bottom: 10px;
+   nav li {
+      margin-bottom: 10px 0;
+   }
+   nav a {
+      display: inline-block;
    }
 }
 
@@ -112,7 +115,7 @@ nav a {
    #content {
       flex-direction: column;
    }
-   .linkervlak, rechtervlak {
+   .linkervlak, .rechtervlak {
       width: 100%;
    }
 }
@@ -138,6 +141,12 @@ footer {
   padding: 1em 0;
   font-size: 0.9em;
   width: 100%;
+}
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   footer {
+      height: 60px;
+   }
 }
 
 .linkervlak-afbeelding {

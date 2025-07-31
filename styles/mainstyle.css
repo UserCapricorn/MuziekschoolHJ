@@ -75,6 +75,17 @@ nav a {
   text-decoration: none;
 }
 
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   .nav ul {
+      display: block;
+      text-align: center;
+   }
+   .nav li {
+      margin-bottom: 10px;
+   }
+}
+
 .geel-streepje {
   height: 5px;
   background-color: yellow;
@@ -88,12 +99,25 @@ nav a {
   padding: 20px;
   width: 30%;
 }
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   .linkervlak {
+      width: 100%;
+   }
+}
+
 
 .rechtervlak {
   background-color: white;
   color: black;
   padding: 20px;
   width: 70%;
+}
+/* Aangepast voor mobiel */
+@media (max-width: 768px) {
+   .rechtervlak {
+      width: 100%;
+   }
 }
 
 .rechtervlak h2 {

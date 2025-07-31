@@ -112,7 +112,7 @@ nav a {
    #content {
       flex-direction: column;
    }
-   .linkervlak, rechtevlak {
+   .linkervlak, rechtervlak {
       width: 100%;
    }
 }
@@ -128,40 +128,6 @@ nav a {
   margin-bottom: 2em;
 }
 
-/* Media query voor mobiel */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .vlak3, .vlak4 {
-    width: 100%;
-  }
-}
-
-[class*="col-"] {
-    width: 100%;
-    height: auto;
-}
-    @media only screen and (min-width: 768px) {
-        [class*="col-"] {
-            float: left;
-            padding: 0px;
-        }
-
-.col-1 {width: 9.09%;}
-.col-2 {width: 18.18%;}
-.col-3 {width: 27.27%;}
-.col-4 {width: 36.36%;}
-.col-5 {width: 45.45%;}
-.col-6 {width: 54.55%;}
-.col-7 {width: 63.64%;}
-.col-8 {width: 72.73%;}
-.col-9 {width: 81.82%;}
-.col-10 {width: 90.91%;}
-.col-11 {width: 100%;} 
-}
 
 
 footer {
@@ -184,8 +150,8 @@ footer {
   max-width: 33%;
   padding: 20px;
   max-height: 50%;
-
 }
+
 
 .linkervlak-kaart {
     max-width: 100%;
